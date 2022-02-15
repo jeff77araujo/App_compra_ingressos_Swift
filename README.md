@@ -7,3 +7,5 @@ Use o CocoaPods como gerenciador de dependências <br>
 Utilize bibliotecas externas no aplicativo <br>
 Aprenda como validar formulários no iOS <br>
 Utilize Regex para validar campos no app
+<br>
+<img src="https://github.com/jeff77araujo/App_compra_ingressos_Swift/blob/main/print.png" alt="Minha Figura">
