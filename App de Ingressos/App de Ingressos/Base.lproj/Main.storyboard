@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="App_de_Ingressos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tl1-gF-vM8">
+                                <rect key="frame" x="0.0" y="35" width="414" height="100"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_alura" translatesAutoresizingMaskIntoConstraints="NO" id="EGH-f6-ygC">
+                                        <rect key="frame" x="132" y="15" width="150" height="70"/>
+                                        <color key="tintColor" red="0.1843137255" green="0.67843137249999996" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="Ies-ib-4ce"/>
+                                            <constraint firstAttribute="width" constant="150" id="VmI-Z4-orv"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.32668725961229805" green="0.1023941251221098" blue="0.52845119201030921" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="IX2-oV-Ifa"/>
+                                    <constraint firstItem="EGH-f6-ygC" firstAttribute="centerX" secondItem="tl1-gF-vM8" secondAttribute="centerX" id="VL5-06-wWb"/>
+                                    <constraint firstItem="EGH-f6-ygC" firstAttribute="centerY" secondItem="tl1-gF-vM8" secondAttribute="centerY" id="tEV-WM-XeS"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informações da sua compra" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JpI-HS-yRW">
+                                <rect key="frame" x="20" y="143" width="374" height="19"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jot-NB-LfU">
+                                <rect key="frame" x="20" y="181" width="374" height="1094"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="B6P-9V-jpM">
+                                        <rect key="frame" x="0.0" y="5" width="374" height="1032.6666666666667"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Festival de música de São Paulo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZfC-33-a3q">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="19"/>
+                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="pX2-E4-GBH">
+                                                <rect key="frame" x="0.0" y="25" width="374" height="130"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="130" id="7Dx-dq-duG"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Local: Sambódromo do Anhembi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hB7-wW-nK9">
+                                                <rect key="frame" x="0.0" y="161" width="374" height="19.333333333333343"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                                                <color key="textColor" red="0.22352941179999999" green="0.24313725489999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Endereço: Avenida Olavo Fontoura, 1209 - Santana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRW-yw-DK4">
+                                                <rect key="frame" x="0.0" y="186.33333333333331" width="374" height="19.333333333333343"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                                                <color key="textColor" red="0.22352941179999999" green="0.24313725489999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preço: R$ 199,00 - Data: 07/02/2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68W-BM-eXo">
+                                                <rect key="frame" x="0.0" y="211.66666666666669" width="374" height="19.333333333333343"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                                                <color key="textColor" red="0.22352941179999999" green="0.24313725489999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Suas informações" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5a-b5-vKa">
+                                                <rect key="frame" x="0.0" y="237" width="374" height="19"/>
+                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3zw-WL-pBw">
+                                                <rect key="frame" x="0.0" y="262" width="374" height="5"/>
+                                                <color key="backgroundColor" red="0.22352941179999999" green="0.24313725489999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="5" id="QLz-Zn-fFW"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome completo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6QV-fE-ck9">
+                                                <rect key="frame" x="0.0" y="273" width="374" height="20.666666666666686"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qOl-wp-YhY">
+                                                <rect key="frame" x="0.0" y="299.66666666666669" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O98-PX-91z">
+                                                <rect key="frame" x="0.0" y="339.66666666666663" width="374" height="20.666666666666686"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fn8-I3-SRE">
+                                                <rect key="frame" x="0.0" y="366.33333333333337" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CPF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cM-JA-SEE">
+                                                <rect key="frame" x="0.0" y="406.33333333333337" width="374" height="20.666666666666686"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu CPF" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5f3-wj-Kx6">
+                                                <rect key="frame" x="0.0" y="433" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CEP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Crj-UO-63F">
+                                                <rect key="frame" x="0.0" y="473" width="374" height="20.666666666666686"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu CEP" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iTS-2M-baq">
+                                                <rect key="frame" x="0.0" y="499.66666666666663" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="cepTextField:" destination="BYZ-38-t0r" eventType="editingChanged" id="Dm2-QZ-dvd"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Endereço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b03-8D-Bi6">
+                                                <rect key="frame" x="0.0" y="539.66666666666663" width="374" height="20.666666666666629"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" tag="5" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="---" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2K8-BW-0g1">
+                                                <rect key="frame" x="0.0" y="566.33333333333337" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bairro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P28-Bv-ONz">
+                                                <rect key="frame" x="0.0" y="606.33333333333337" width="374" height="20.666666666666629"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" tag="6" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="---" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="75y-Gl-oGP">
+                                                <rect key="frame" x="0.0" y="633" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Cartão" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hev-vP-OHq">
+                                                <rect key="frame" x="0.0" y="673" width="374" height="19"/>
+                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u9o-uh-Ise">
+                                                <rect key="frame" x="0.0" y="698" width="374" height="5"/>
+                                                <color key="backgroundColor" red="0.22352941179999999" green="0.24313725489999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="5" id="6ag-fk-Jcq"/>
+                                                </constraints>
+                                            </view>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bandeiras_cartoes" translatesAutoresizingMaskIntoConstraints="NO" id="Tdl-m8-Wpl">
+                                                <rect key="frame" x="0.0" y="709" width="374" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="ABv-qw-hm8"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Número do cartão" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9mv-Yw-yNk">
+                                                <rect key="frame" x="0.0" y="760" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="OYm-tL-j2k">
+                                                <rect key="frame" x="0.0" y="800" width="374" height="59.666666666666629"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="g8w-zB-zdH">
+                                                        <rect key="frame" x="0.0" y="0.0" width="184.66666666666666" height="59.666666666666664"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vencimento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSE-DU-EW8">
+                                                                <rect key="frame" x="0.0" y="0.0" width="184.66666666666666" height="20.666666666666668"/>
+                                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="KqS-3p-g68">
+                                                                <rect key="frame" x="0.0" y="25.666666666666629" width="184.66666666666666" height="34"/>
+                                                                <subviews>
+                                                                    <textField opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MM" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sup-J6-GHW">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="89.666666666666671" height="34"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                        <connections>
+                                                                            <action selector="mesTextFieldFoco:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="765-Ce-EaA"/>
+                                                                        </connections>
+                                                                    </textField>
+                                                                    <textField opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="AA" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ExK-TZ-Zz4">
+                                                                        <rect key="frame" x="94.666666666666686" y="0.0" width="90" height="34"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                        <connections>
+                                                                            <action selector="anoTextField:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="pUx-xQ-3Zb"/>
+                                                                        </connections>
+                                                                    </textField>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="BbY-61-FBU">
+                                                        <rect key="frame" x="189.66666666666663" y="0.0" width="184.33333333333337" height="59.666666666666664"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cód. Segurança" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLH-3c-vL9">
+                                                                <rect key="frame" x="0.0" y="0.0" width="184.33333333333334" height="20.666666666666668"/>
+                                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="3 Dígitos" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ukJ-NV-iMh">
+                                                                <rect key="frame" x="0.0" y="25.666666666666629" width="184.33333333333334" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
+                                                                <connections>
+                                                                    <action selector="codSegTextField:" destination="BYZ-38-t0r" eventType="editingChanged" id="sVy-cN-hQP"/>
+                                                                </connections>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <textField opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Número de parcelas" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="apC-Jf-yOA">
+                                                <rect key="frame" x="0.0" y="865.66666666666674" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="parcelasTextField:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="tRW-xa-oqs"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. Confirmação" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2WN-vd-LAp">
+                                                <rect key="frame" x="0.0" y="905.66666666666674" width="374" height="19"/>
+                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BWw-Yv-XMh">
+                                                <rect key="frame" x="0.0" y="930.66666666666674" width="374" height="5"/>
+                                                <color key="backgroundColor" red="0.22352941179999999" green="0.24313725489999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="5" id="yIM-ui-WuP"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qdn-BR-IBq">
+                                                <rect key="frame" x="0.0" y="941.66666666666674" width="374" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12X 16.58 (ou R$ 199,00 á vista)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYm-GY-mS6">
+                                                        <rect key="frame" x="8" y="11" width="358" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="ZcF-7m-C7s"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fll-fD-cNk">
+                                                <rect key="frame" x="0.0" y="987.66666666666674" width="374" height="45"/>
+                                                <color key="backgroundColor" red="0.3266872596" green="0.1023941251" blue="0.52845119200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="cjY-eg-Pd5"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <state key="normal" title="Comprar">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonBuy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Dv-WS-baY"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="374" id="CjS-TR-be4"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="B6P-9V-jpM" secondAttribute="trailing" id="1JO-iF-28m"/>
+                                    <constraint firstAttribute="bottom" secondItem="B6P-9V-jpM" secondAttribute="bottom" constant="10" id="HII-Fn-JrQ"/>
+                                    <constraint firstItem="B6P-9V-jpM" firstAttribute="leading" secondItem="jot-NB-LfU" secondAttribute="leading" id="Tju-Rs-xRO"/>
+                                    <constraint firstItem="B6P-9V-jpM" firstAttribute="top" secondItem="jot-NB-LfU" secondAttribute="top" constant="5" id="dOg-08-HQj"/>
+                                </constraints>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dX3-vx-4hc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="35"/>
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.78431372549019607" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="H7a-7v-Fd0"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vEl-mB-nkZ">
+                                <rect key="frame" x="20" y="166" width="374" height="5"/>
+                                <color key="backgroundColor" red="0.22352941179999999" green="0.24313725489999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="FqL-0K-d3p"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="JpI-HS-yRW" firstAttribute="top" secondItem="tl1-gF-vM8" secondAttribute="bottom" constant="8" symbolic="YES" id="2Hs-Sx-XJu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JpI-HS-yRW" secondAttribute="trailing" constant="20" id="4Ov-jg-Rfr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jot-NB-LfU" secondAttribute="trailing" constant="20" id="CfN-5f-GMr"/>
+                            <constraint firstItem="JpI-HS-yRW" firstAttribute="centerX" secondItem="vEl-mB-nkZ" secondAttribute="centerX" id="Edk-aY-DqP"/>
+                            <constraint firstItem="vEl-mB-nkZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="K11-go-iLw"/>
+                            <constraint firstAttribute="bottom" secondItem="jot-NB-LfU" secondAttribute="bottom" constant="25" id="LrW-7R-21b"/>
+                            <constraint firstItem="tl1-gF-vM8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Mt6-aL-zuP"/>
+                            <constraint firstItem="JpI-HS-yRW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VI0-V7-z2i"/>
+                            <constraint firstItem="dX3-vx-4hc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dPD-MM-lL4"/>
+                            <constraint firstItem="jot-NB-LfU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dVk-wN-fgt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vEl-mB-nkZ" secondAttribute="trailing" constant="20" id="edo-nP-LCn"/>
+                            <constraint firstItem="tl1-gF-vM8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gP2-aU-LuZ"/>
+                            <constraint firstItem="dX3-vx-4hc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ne5-YC-mDB"/>
+                            <constraint firstItem="dX3-vx-4hc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nzY-JE-OLO"/>
+                            <constraint firstItem="tl1-gF-vM8" firstAttribute="top" secondItem="dX3-vx-4hc" secondAttribute="bottom" id="qt5-0k-CI6"/>
+                            <constraint firstItem="vEl-mB-nkZ" firstAttribute="top" secondItem="JpI-HS-yRW" secondAttribute="bottom" constant="4" id="rjZ-PW-OpX"/>
+                            <constraint firstItem="jot-NB-LfU" firstAttribute="top" secondItem="vEl-mB-nkZ" secondAttribute="bottom" constant="10" id="t6I-Lt-2YE"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="414" height="1300"/>
+                    <connections>
+                        <outlet property="imageBanner" destination="pX2-E4-GBH" id="Pqj-O4-hwN"/>
+                        <outlet property="scrollViewMain" destination="jot-NB-LfU" id="jMX-aK-OnE"/>
+                        <outlet property="valorParcelasLabel" destination="YYm-GY-mS6" id="BNe-0X-IFj"/>
+                        <outletCollection property="textFields" destination="qOl-wp-YhY" collectionClass="NSMutableArray" id="nVB-Xm-IIi"/>
+                        <outletCollection property="textFields" destination="fn8-I3-SRE" collectionClass="NSMutableArray" id="dvl-HJ-TBg"/>
+                        <outletCollection property="textFields" destination="5f3-wj-Kx6" collectionClass="NSMutableArray" id="Ud6-X1-lVO"/>
+                        <outletCollection property="textFields" destination="iTS-2M-baq" collectionClass="NSMutableArray" id="chT-fV-Qmq"/>
+                        <outletCollection property="textFields" destination="2K8-BW-0g1" collectionClass="NSMutableArray" id="5b4-k6-nyW"/>
+                        <outletCollection property="textFields" destination="75y-Gl-oGP" collectionClass="NSMutableArray" id="gvY-II-6TW"/>
+                        <outletCollection property="textFields" destination="9mv-Yw-yNk" collectionClass="NSMutableArray" id="xEV-MI-8Vc"/>
+                        <outletCollection property="textFields" destination="Sup-J6-GHW" collectionClass="NSMutableArray" id="hYU-Ov-Qzu"/>
+                        <outletCollection property="textFields" destination="ExK-TZ-Zz4" collectionClass="NSMutableArray" id="nKc-2h-CeC"/>
+                        <outletCollection property="textFields" destination="ukJ-NV-iMh" collectionClass="NSMutableArray" id="vLd-9K-Mea"/>
+                        <outletCollection property="textFields" destination="apC-Jf-yOA" collectionClass="NSMutableArray" id="wJU-hD-XRd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.98130841121494" y="130.23758099352054"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bandeiras_cartoes" width="3032" height="398"/>
+        <image name="banner" width="640" height="426"/>
+        <image name="logo_alura" width="335" height="150"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
